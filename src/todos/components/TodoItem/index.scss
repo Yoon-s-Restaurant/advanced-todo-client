@@ -1,0 +1,20 @@
+.todo-item{
+  display: flex;
+  align-items: center;
+  line-height: 4em;
+  font-size: 8px;
+  .title{
+    flex: 4 1 0;
+  font-weight: normal;
+
+  }
+  .progress {
+    flex: 2 1 0;
+  }
+  .priority {
+    flex: 2 1 0;
+  }
+  .dead-line {
+    flex: 2 1 0;
+  }
+}

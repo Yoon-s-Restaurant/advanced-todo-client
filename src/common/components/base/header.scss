@@ -1,0 +1,19 @@
+.default-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 56px;
+
+  .header-logo{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    h1 {
+      //display: inline-flex;
+      //justify-content: center;
+      font-size: var(--text-lg);
+      margin: auto;
+      color: #fff;
+    }
+  }
+}

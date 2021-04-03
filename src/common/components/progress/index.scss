@@ -1,0 +1,14 @@
+.progress-bar {
+  .progress-bar-wrapper {
+      width: 5rem;
+      height: 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    .progress-bar-rate {
+      background-color: var(--mint);
+
+      border-radius: 8px;
+    }
+  }
+
+}

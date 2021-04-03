@@ -1,0 +1,21 @@
+.default-layout {
+  display: flex;
+  .main-layout {
+    //padding-top: 56px;
+    flex: 1 1 0;
+  }
+}
+
+
+.box-layout {
+    padding: 2em;
+    width: calc(100% - 2 * 2em);
+    height: calc(100% - 2 * 2em);
+  .box-content {
+    background-color: #fff;
+    width: 100%;
+    //height: 100%;
+    border-top: 3px solid var(--blue);
+    border-radius: 2px;
+  }
+}
