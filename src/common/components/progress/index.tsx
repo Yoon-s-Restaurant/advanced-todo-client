@@ -6,7 +6,6 @@ interface ProgressBarProps {
 const ProgressBar: React.FC<ProgressBarProps> = ({ rate }) => {
   const progressStyle = {
     width: rate + '%',
-    height: '100%',
   };
 
   console.log(rate);
@@ -14,7 +13,12 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ rate }) => {
     <section className={'progress-bar'}>
       <div className={'progress-bar-wrapper'}>
         <div className={'progress-bar-rate'} style={progressStyle}>
-          {`${rate}%`}
+          {/*{`${rate}%`}*/}
+        </div>
+        <div className={'progress-handle'} style={{ left: `${rate}%` }}>
+          <div className={'progress-rate-text-wrapper'}>
+            <p>{`${rate}%`}</p>
+          </div>
         </div>
       </div>
     </section>

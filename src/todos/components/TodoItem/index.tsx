@@ -16,9 +16,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ data }) => {
   return (
     <article className={'todo-item'}>
       <h3 className={'title'}>{data.title}</h3>
-      <div className={'progress'}>
-        <ProgressBar rate={data.progress} />
-      </div>
+      <ProgressBar rate={data.progress} />
       <div className={'priority'}></div>
       <div className={'dead-line'}>{parsedDeadLine}</div>
     </article>

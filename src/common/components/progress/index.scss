@@ -1,13 +1,47 @@
 .progress-bar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
   .progress-bar-wrapper {
+    position: relative;
       width: 5rem;
-      height: 0.5rem;
+      height: 0.7rem;
     border-radius: 8px;
-    overflow: hidden;
+    border: 1px solid var(--gray-light);
+    //overflow: hidden;
+    //overflow: hidden;
+    box-sizing: border-box;
     .progress-bar-rate {
-      background-color: var(--mint);
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--mint-light);
+      color: #fff;
+      font-size: 6px;
+      height: 0.7rem;
+      transform: translate(-1px, -1px);
       border-radius: 8px;
+      box-sizing: border-box;
+    }
+    .progress-handle {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: var(--mint);
+      height:0.8rem;
+      width: 0.8rem;
+      .progress-rate-text-wrapper{
+        position: absolute;
+        top: 0;
+        left: -40%;
+        transform: translateY( -100%);
+        p {
+          font-size: 12px;
+          transform: scale(0.6);
+        }
+      }
     }
   }
 
