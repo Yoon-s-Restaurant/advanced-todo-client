@@ -1,0 +1,14 @@
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  padding : 1em;
+  .button {
+    color: #fff;
+    background-color: var(--mint-light);
+    border: none;
+    border-radius: 4px;
+    font-size: var(--text-sm);
+    padding: 3px 0;
+  }
+}

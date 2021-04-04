@@ -4,12 +4,15 @@ import Header from 'common/components/base/Header';
 import Sidebar from 'common/components/sidebar';
 import BoxLayout from 'common/layout/BoxLayout';
 import Layout from 'common/layout/Layout';
+import TodoForm from 'todo/components/TodoForm';
 
 const NewTodoPage: React.FC = () => {
   return (
     <Template>
       <Layout header={<Header />} sideBar={<Sidebar />}>
-        <BoxLayout>hihi</BoxLayout>
+        <BoxLayout>
+          <TodoForm />
+        </BoxLayout>
       </Layout>
     </Template>
   );
