@@ -1,16 +1,19 @@
 .default-layout {
   display: flex;
   .main-layout {
-    //padding-top: 56px;
     flex: 1 1 0;
+    width: calc(100% - 2 * 2em);
+    padding: 56px 2em 0;
+    max-width: 30rem;
+    margin: 0 auto;
   }
 }
 
 
 .box-layout {
-    padding: 2em;
-    width: calc(100% - 2 * 2em);
-    height: calc(100% - 2 * 2em);
+    width: 100%;
+    margin-bottom: 5em;
+    //height: calc(100% - 2 * 2em);
   .box-content {
     background-color: #fff;
     width: 100%;

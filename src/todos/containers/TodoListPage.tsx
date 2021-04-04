@@ -5,11 +5,15 @@ import Sidebar from 'common/components/sidebar';
 import Header from 'common/components/base/Header';
 import BoxLayout from 'common/layout/BoxLayout';
 import TodoList from 'todos/components/TodoList';
+import CategoryList from 'todos/components/CategoryList';
 
 const TodoListPage: React.FC = () => {
   return (
     <Template>
       <Layout header={<Header />} sideBar={<Sidebar />}>
+        <BoxLayout>
+          <CategoryList />
+        </BoxLayout>
         <BoxLayout ariaLabel={'todo-list'}>
           <TodoList />
         </BoxLayout>

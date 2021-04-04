@@ -25,6 +25,7 @@ export interface Todo {
   priority: 'high' | 'medium' | 'low';
   deadLine: string;
 }
+
 const todos: Todo[] = [
   {
     idx: 1,
