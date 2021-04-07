@@ -33,10 +33,10 @@ html {
   // media query
 
   // text
-  --text-xsm: calc(var(--base-text) / (var(--text-scale-ratio) * var(--text-scale-ratio)));
-  --text-sm: calc(var(--base-text) / (var(--text-scale-ratio)));
-  --text-md: var(--base-text);
-  --text-lg: calc(var(--base-text) * var(--text-scale-ratio));
+  --text-xsm: 0.7rem;
+  --text-sm: 0.8rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
 }
 
 body {
@@ -44,6 +44,7 @@ body {
   --blue: #6d7eff;
   --mint: #2EDAC3;
   --mint-light: #90e8dc;
+  --light-gray:  #fafafa;
   background-color: #dadada;
   color : #363c48;
 }
@@ -91,4 +92,8 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
+}
+
+ul, ol {
+  list-style: none;
 }

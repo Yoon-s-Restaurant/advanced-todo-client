@@ -1,0 +1,29 @@
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:  calc(100% - 2rem);
+  max-height: 980px;
+  height: 100%;
+  padding: 0 1rem;
+  .header-logo {
+
+  }
+  .search-button {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  .search-form {
+    @media(min-width: 600px) {
+      max-width: 300px;
+    }
+    @media(min-width: 1024px) {
+      width: 60%;
+    }
+
+    .search-button {
+
+    }
+  }
+}

@@ -1,0 +1,42 @@
+
+nav {
+
+  .side-bar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    padding: 2em 0 2em 2em;
+
+    li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: calc(20% - 4px * 2);
+      padding: 4px;
+      margin-bottom: 1em;
+      a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        span {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0.5em;
+        }
+        p {
+          position: relative;
+          font-size: var(--text-sm);
+        }
+      }
+    }
+    li:hover {
+      height: 30%;
+      background-color: lightgray;
+      border-radius: 16px;
+    }
+  }
+}
+

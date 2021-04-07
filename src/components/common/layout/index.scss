@@ -1,0 +1,44 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+
+  .header {
+    width: 100%;
+    height: 56px;
+    background-color: var(--blue);
+  }
+
+  .container {
+    display: flex;
+    flex: 1 1 auto;
+
+    .sidebar-container {
+      display: none;
+      padding: 1rem;
+      background-color: var(--gray-light);
+      @media(min-width: 600px) {
+        display: block;
+        width: 30%;
+      }
+      @media(min-width: 1024px) {
+        width: 300px;
+      }
+
+    }
+
+    .main-container {
+
+      background-color: white;
+      padding: 1rem;
+      width: 100%;
+      @media(min-width: 600px) {
+        width: 70%;
+      }
+      @media(min-width: 1024px) {
+        width: calc(100% - 300px);
+      }
+    }
+  }
+}
